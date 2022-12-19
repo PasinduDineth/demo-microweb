@@ -1,0 +1,132 @@
+.video_player {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+}
+.main_wrapper {
+    position: fixed;
+    background: rgba(225, 225, 225, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.content {
+    display: flex;
+}
+.text_content_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+.text_content_wrapper p{
+    text-align: center;
+    font-size: 25px;
+    color: #232323;
+    margin-top: 20px;
+}
+
+.text_content_wrapper h1{
+    text-align: center;
+    font-size: 40px;
+    color: #232323;
+    font-weight: bolder;
+}
+
+.logo_wrapper {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 20px;
+}
+
+.underline_rectangle {
+    height: 5px;
+    width: 150px;
+    background-color: #555;
+}
+
+/*Media query*/
+@media screen and (max-width: 767px) {
+    .text_content_wrapper p {
+        font-size: 20px;
+    }
+    .text_content_wrapper h1 {
+        font-size: 27px;
+    }
+    .text_content_wrapper {
+        width: 70%;
+    }
+    .logo_wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-left: 0;
+    }
+}
+/*Swing animation*/
+@-webkit-keyframes swing {
+    15% {
+        -webkit-transform: translateY(5px);
+        transform: translateY(5px);
+    }
+    30% {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+    50% {
+        -webkit-transform: translateY(3px);
+        transform: translateY(3px);
+    }
+    65% {
+        -webkit-transform: translateY(-3px);
+        transform: translateY(-3px);
+    }
+    80% {
+        -webkit-transform: translateY(2px);
+        transform: translateY(2px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+@keyframes swing {
+    15% {
+        -webkit-transform: translateY(5px);
+        transform: translateY(5px);
+    }
+    30% {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+    50% {
+        -webkit-transform: translateY(3px);
+        transform: translateY(3px);
+    }
+    65% {
+        -webkit-transform: translateY(-3px);
+        transform: translateY(-3px);
+    }
+    80% {
+        -webkit-transform: translateY(2px);
+        transform: translateY(2px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+.swing:hover
+{
+    -webkit-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}

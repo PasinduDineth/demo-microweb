@@ -1,0 +1,73 @@
+.main_view {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo_nav_wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+.nav_bar_text {
+    font-size: 22px;
+    font-weight: bolder;
+    color: aliceblue;
+}
+
+.nav_bar_text:hover {
+    color: #0055ff;
+    cursor: pointer;
+}
+
+.carousel_wrapper {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    max-width: 50%;
+    align-self: flex-end;
+    margin-right: 150px;
+}
+
+.carousel_wrapper h1 {
+    font-weight: bolder;
+    color: aliceblue;
+    text-align: right;
+    padding-bottom: 20px;
+}
+
+.arrow_wrapper {
+    display: none;
+}
+@media screen and (max-width: 767px) {
+    .logo_nav_wrapper {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .logo_nav_wrapper p {
+        margin-top: 10px;
+    }
+    .carousel_wrapper h1, p {
+        text-align: center;
+    }
+    .carousel_wrapper {
+        max-width: 100%;
+        margin-right: 0;
+        width: 100%;
+        overflow: hidden;
+    }
+    .arrow_wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
